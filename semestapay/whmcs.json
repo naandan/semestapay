@@ -1,0 +1,31 @@
+{
+    "schema": "1.0",
+    "type": "whmcs-gateways",
+    "name": "semestapay",
+    "license": "MIT",
+    "category": "payments",
+    "description": {
+        "name": "Semestapay Payment Gateway Module",
+        "tagline": "Semestapay Payment Gateways💸",
+        "long": "Receive payment via Semestapay.",
+        "features": [
+			"Transfer Bank"
+        ]
+    },
+    "logo": {
+        "filename": "logo.png"
+    },
+    "support": {
+        "homepage": "https:\/\/www.sti-group.co.id\/", 
+        "learn_more": "https:\/\/www.sti-group.co.id", 
+        "email": "support@sti-group.co.id", 
+        "support_url": "https:\/\/sti-group.co.id",
+        "docs_url": "https:\/\/sti-group.co.id"
+    },
+    "authors": [
+        {
+            "name": "PT. Semesta Teknologi Informatika",
+            "homepage": "https:\/\/sti-group.co.id"
+        }
+    ]
+}
