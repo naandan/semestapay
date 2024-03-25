@@ -75,13 +75,13 @@ function semestapay_config()
 
 function semestapay_link($params)
 {	
-    $target = $params['endpoint']. '/api/v1/payment/create-transaction/';
+    $target = $params['endpoint']. '/api/v1/payment/create/';
 	$merchant = $params['code'];
     $merchantKey = $params['apikey'];
     $timestamp = round(microtime(true) * 1000);
     $signature = Semestapay_Helper::generate_signature($merchant, $merchantKey, $timestamp);
     
-    $invoiceCode = $params['invoiceid'];
+    $paymentId = $params['invoiceid'];
     $paymentAmount = $params['amount'];
 
     // Items Details
@@ -113,7 +113,7 @@ function semestapay_link($params)
     );
 
     $body = array(
-        'invoiceCode' => $invoiceCode,
+        'paymentId' => $paymentId,
         'paymentAmount' => $paymentAmount,
         'customerDetails' => $customerDetails,
         'itemsDetails' => $itemsDetails,

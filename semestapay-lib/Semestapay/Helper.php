@@ -12,5 +12,6 @@ class Semestapay_Helper {
         echo '<pre>';
         var_dump($data);
         echo '</pre>';
+        die();
     }
 }
